@@ -1,0 +1,276 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Popins',sans-serif; */
+}
+
+/* Navbar */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: black;
+    /* margin-bottom: 1rem; */
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem .8rem;
+    border: #fff 1px solid;
+}
+.navbar a{
+   position: relative;
+   font-size: 18px;
+   color: #fff;
+   text-decoration: none;
+   margin-left: 40px;
+   font-weight: 500;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+width: 100%;
+}
+/* Navbar */
+
+.comma{
+    width: 60px;
+    height: 60px;
+}
+.up_comma{
+    float: left;
+}
+.down_comma{
+    float: right;
+}
+#self_content_box{
+    /* max-width: 80%; */
+    color: #fff;
+    margin-top: 5rem;
+    padding: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.me_img_box{
+    width: 400px;
+    height: 400px;
+    border-radius: 200%;
+    background-image: url("./img/me0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(1);
+    transition: .5s;
+    margin-right: 10rem;
+}
+
+.me_img_box:hover{
+    filter: grayscale(0);
+}
+
+
+#grid_box{
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(5,minmax(50px,auto)); */
+    margin-top: 5rem;
+}
+.circle_box{
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}
+
+  .shanxing{
+    position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 200px;
+  background-color: red;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .sx1{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: rotate(0deg);
+    clip: rect(0px,60px,120px,0px); /*这个clip属性用来绘制半圆，在clip的rect范围内的内容显示出来，使用clip属性，元素必须是absolute的 */
+    border-radius: 212px;
+    background-color: black;
+    /* border: 1px black solid; */
+    /*-webkit-animation: an1 2s infinite linear; */
+  }
+  
+  .sx2{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: rotate(0deg);
+    clip: rect(0px,120px,120px,60px);
+    border-radius: 212px;
+    background-color: black;
+    /* border: 1px black solid; */
+    /*-webkit-animation: an2 2s infinite linear;*/
+  }
+  /*绘制一个45度扇形*/
+/* .shanxing1 .sx2{transform: rotate(45deg);} */
+.shanxing1 .sx1{transform: rotate(165deg);}
+.shanxing1 .sx2{background-color: red;}
+
+/*绘制一个90度扇形*/
+/* .shanxing2 .sx2{transform: rotate(90deg);} */
+.shanxing2 .sx1{transform: rotate(120deg);}
+.shanxing2 .sx2{background-color: red;}
+
+/*绘制一个135度扇形*/
+/* .shanxing3 .sx2{transform: rotate(135deg);} */
+.shanxing3 .sx1{transform: rotate(150deg);}
+.shanxing3 .sx2{background-color: red;}
+
+/*绘制一个225度扇形*/
+.shanxing4 .sx1{transform: rotate(150deg);}
+.shanxing4 .sx2{background-color: red;}
+
+.mask{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: black;
+    z-index: 100;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Project Card */
+#project_out_box{
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.project_container{
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.project_container_inner{
+    border: #fff 1px solid;
+}
+
+.project_card_img{
+    width: 412px;
+    height: 400px;
+    filter: grayscale(1);
+    transition: .5s;
+}
+.project_card_img1{
+    background-image: url("./img/steel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project_card_img2{
+    background-image: url("./img/build.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.project_card_img3{
+    background-image: url("./img/lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project_card_img:hover{
+    filter: grayscale(0);
+}
+
+.project_card_text_box{
+    padding: 1rem;
+    text-align: left;
+}
+
+
+#content3{
+margin-top: 10rem;
+margin-bottom: 10rem;
+}
+
+  .content3_innerbox{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content3_innerbox1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .content3_innerbox2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    width: 70%;
+  }
+
+  .content3_az{
+    color: white;
+    font-size: 100px;
+    border: #fff 1px solid;
+    padding: 1rem;
+    width: calc(40%);
+    text-align: center;
+  }
+  
+  .content3_az a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .fb, .linkedin, .github{
+    width: 50px;
+    height: 50px;
+    border: 8px white solid;
+    background-color: white;
+    border-radius: 100px;
+  }
+  
+  .image{
+    width: 50px;
+    height: 50px;
+    /* object-fit: cover; */
+  }

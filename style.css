@@ -1,0 +1,180 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#container1{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 120vh;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+#container2{
+  background-color: bisque;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+/* #content div{
+    background: #3bbced;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+#content div:nth-child(even){
+    background: #777;
+} */
+
+.blah1{
+  background: #ea1313;
+}
+
+.letter_box {
+    animation: mymove 5s infinite;
+  }
+  
+/* @keyframes mymove {
+  50% {flex-grow: 8;}
+} */
+
+
+@keyframes example {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.test {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.block{
+  border: 3px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.big_block{
+  width: 200px;
+  height: 200px;
+  font-size: 200px;
+}
+
+.medium_block{
+  width: 120px;
+  height: 120px;
+  font-size: 120px;
+}
+
+.small_block{
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+}
+
+.tiny_block{
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.az{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  font-size: 70px;
+  display: flex;
+}
+
+.move-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.move-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.move-up {
+  animation-name: move-up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.move-down {
+  animation-name: move-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-left {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 100px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes move-down {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
