@@ -49,16 +49,6 @@ width: 100%;
 }
 /* Navbar */
 
-.comma{
-    width: 60px;
-    height: 60px;
-}
-.up_comma{
-    float: left;
-}
-.down_comma{
-    float: right;
-}
 #self_content_box{
     /* max-width: 80%; */
     color: #fff;
